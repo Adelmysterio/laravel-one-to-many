@@ -25,15 +25,15 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="type">Type:</label>
-                    <input class="form-control" type="text" id="type" name="type"
-                        value="{{ old('type') }}" required>
+                    <label for="tech">Tech:</label>
+                    <input class="form-control" type="text" id="tech" name="tech"
+                        value="{{ old('tech') }}" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="image">URL Immagine:</label>
-                    <input class="form-control" type="url" id="image" name="image"
-                        value="{{ old('image') }}" required>
+                    <label for="url">URL:</label>
+                    <input class="form-control" type="url" id="url" name="url"
+                        value="{{ old('url') }}" required>
                 </div>
 
                 <div class="form-group mb-3">

@@ -26,20 +26,20 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="type">Type:</label>
-                    <input class="form-control" type="text" id="type" name="type"
-                        value="{{ old('type', $project->type) }}" required>
+                    <label for="tech">tech:</label>
+                    <input class="form-control" type="text" id="tech" name="tech"
+                        value="{{ old('tech', $project->tech) }}" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="image">URL Immagine:</label>
-                    <input class="form-control" type="url" id="image" name="image"
-                        value="{{ old('image', $project->image) }}" required>
+                    <label for="url">URL Immagine:</label>
+                    <input class="form-control" type="url" id="url" name="url"
+                        value="{{ old('url', $project->url) }}" required>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="content">Content:</label>
-                    <textarea class="form-control" type="text-area" id="content" name="content" required rows="10">{{ old('content', $project->content) }}</textarea>
+                    <textarea class="form-control" tech="text-area" id="content" name="content" required rows="10">{{ old('content', $project->content) }}</textarea>
                 </div>
 
                 <div class="form-group">
