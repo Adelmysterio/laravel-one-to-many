@@ -3,21 +3,23 @@
     Adelmo's Projects
 @endsection
 @section('main-content')
-    <table class="table table-dark table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Tech</th>
-                <th scope="col">Content</th>
-                <th scope="col">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($projects as $project)
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Tech</th>
+            <th scope="col">Content</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($projects as $project)
                 <tr>
                     <td>{{ $project->id }}</td>
                     <td>{{ $project->name }}</td>
+                    <td>{{ $project->type->name }}</td>
                     <td>{{ $project->tech }}</td>
                     <td>{{ $project->content }}</td>
                     <td>
