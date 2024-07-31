@@ -18,7 +18,7 @@ class ProjectSeeder extends Seeder
 
         for ($i = 0; $i < 10; $i++) {
             $newProject = new Project();
-            $newProject->types_id = $faker->randomElement($types);
+            $newProject->type_id = $faker->randomElement($types);
             $newProject->name = $faker->name();
             $newProject->tech = $faker->word();
             $newProject->content = $faker->realText();

@@ -15,7 +15,7 @@ class Project extends Model
         'tech',
         'content',
         'url',
-        'types_id'
+        'type_id'
     ];
 
     public function type() {
