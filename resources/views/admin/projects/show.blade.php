@@ -13,6 +13,7 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">ID Number: {{ $project->id }}</li>
+                    <li class="list-group-item">{{ $project->type->name }}</li>
                     <li class="list-group-item">{{ $project->tech }}</li>
                     <li class="list-group-item"><a href="{{ $project->url }}">{{ $project->url }}</a></li>
                 </ul>

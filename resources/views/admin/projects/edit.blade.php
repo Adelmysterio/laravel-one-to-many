@@ -26,7 +26,16 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="tech">tech:</label>
+                    <label for="type_id">Type:</label>
+                    <select class="form-select" aria-label="Default select example" name="type_id">
+                        @foreach ($types as $type)
+                            <option value="{{ $type->id }}">{{ $type->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tech">Tech:</label>
                     <input class="form-control" type="text" id="tech" name="tech"
                         value="{{ old('tech', $project->tech) }}" required>
                 </div>
